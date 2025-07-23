@@ -1,15 +1,15 @@
 Spring-boot-CRUD-with-Mysql
 A Spring Boot 3 project demonstrating CRUD operations and basic logic processing using MySQL as a persistent database and Spring Data JPA. It includes endpoints for managing multiple entities like `User`, `Employee`, `Car`, `Book`, `BestSeller`, and simple algorithm logic like age checking, leap year verification, and temperature status.
 
-🧰 Features
-- ✅ Full CRUD operations using Spring Data JPA
-- 🔁 MySQL database integration
-- 🧠 Simple algorithmic logic (age group, leap year, temperature level)
-- 📘 Swagger/OpenAPI documentation
-- ✍️ Organized into MVC: Model, Repository, Service, Controller
-- 🔒 Input validation via Jakarta Bean Validation
+Features
+-  Full CRUD operations using Spring Data JPA
+-  MySQL database integration
+-  Simple algorithmic logic (age group, leap year, temperature level)
+-  Swagger/OpenAPI documentation
+-  Organized into MVC: Model, Repository, Service, Controller
+-  Input validation via Jakarta Bean Validation
 
-🛠 Technologies Used
+ Technologies Used
 
 | Technology             | Purpose                                  |
 |------------------------|------------------------------------------|
@@ -23,7 +23,7 @@ A Spring Boot 3 project demonstrating CRUD operations and basic logic processing
 | Lombok                 | Reduces boilerplate (getters/setters)    |
 | Maven                  | Project and dependency management        |
 
-🗂 Entities Managed
+ Entities Managed
 
 The app handles various domain entities via REST:
 
@@ -38,7 +38,7 @@ The app handles various domain entities via REST:
   - `LeapYearModel`
   - `TemperatureModel`
 
-🌐 Sample REST Endpoints
+Sample REST Endpoints
 
 | HTTP Method | Endpoint                        | Description                          |
 |-------------|----------------------------------|--------------------------------------|
@@ -50,14 +50,14 @@ The app handles various domain entities via REST:
 
 > There are 12 controllers and 12 models in total – each designed to handle different business logic or CRUD functionalities.
 
- 📘 Swagger/OpenAPI
+Swagger/OpenAPI
 
 API documentation is automatically generated and can be accessed at:
 
 - Swagger UI: `http://localhost:8080/swagger-ui.html`
 - OpenAPI Docs: `http://localhost:8080/v3/api-docs`
 
- 🔌 Database Configuration
+Database Configuration
 
 properties
  MySQL Configuration
@@ -70,14 +70,14 @@ spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
 
-▶️ Run Locally
+Run Locally
 Prerequisites
     JDK 17+
     MySQL Server
     Maven
 
 Steps
-git clone https://github.com/yourusername/DataBaseMysql.git
+git clone https://github.com/Catus07/DataBaseMysql.git
 cd DataBaseMysql
 mvn spring-boot:run
 Visit http://localhost:8080/swagger-ui.html to explore the APIs.
@@ -93,6 +93,6 @@ Visit http://localhost:8080/swagger-ui.html to explore the APIs.
 
     You can add test cases under src/test/java/...
 
-📃 License
+License
 This project is free to use under the MIT License.
-    Created by Revocatus Joseph Nduki — Passionate about Java & backend development 🧑‍💻
+    Created by Revocatus Joseph Nduki — Passionate about Java & backend development 
