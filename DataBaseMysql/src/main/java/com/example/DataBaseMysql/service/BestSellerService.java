@@ -7,8 +7,11 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class BestSellerService {
-    @Autowired
-    public BestSellerRepository bestSellerRepository;
+
+    private final BestSellerRepository bestSellerRepository;
+    public BestSellerService(BestSellerRepository bestSellerRepository){
+        this.bestSellerRepository=bestSellerRepository;
+    }
 
     public BestSellerModel addSales(BestSellerModel bestSellerModel){
         return bestSellerRepository.save(bestSellerModel);
