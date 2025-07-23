@@ -18,4 +18,7 @@ public class BestSellerModel {
     private String Status;
 
 
+    public void setQuantity(int i) {
+
+    }
 }

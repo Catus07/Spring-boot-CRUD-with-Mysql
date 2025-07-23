@@ -7,8 +7,11 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class BookService {
-    @Autowired
-    public BookRepository bookRepository;
+
+    private BookRepository bookRepository;
+    public BookService(BookRepository bookRepository){
+
+    }
 
     public NewBookModel insertBook(NewBookModel newBookModel){
         return bookRepository.save(newBookModel);
